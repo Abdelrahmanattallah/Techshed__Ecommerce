@@ -1,0 +1,49 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+========================================================================== */
+
+/**
+* 1. Correct the line height in all browsers.
+* 2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+/* reset all spaces from all elements  */
+* { 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/* customize the html scrolling and user select  */
+html {
+  scroll-behavior: smooth;
+  user-select: none;
+}
+/* * Remove the border on images */
+img { 
+  width: 100%;
+  max-width: 100%;
+}
+/* reset to all buttons and inputs and textarea */
+button,
+input,
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+}
+/* anchor tags reset */
+a { 
+  text-decoration: none;
+  color: #000000;
+}
+/* li's reseting */
+li { 
+  list-style: none;
+}
+/* images customize */
+img { 
+  /* max-width: 100%; */
+  width: 20px;
+}

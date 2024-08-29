@@ -1,0 +1,593 @@
+{
+  "Computers": [
+    {
+      "id": 0,
+      "image": "images/products/computers/comp1.webp",
+      "title": "Pilates 14 Touch Screen Laptop 12GB Memory",
+      "price": 385.0,
+      "oldprice": false,
+      "sale": false,
+      "category": "computers"
+    },
+    {
+      "id": 1,
+      "image": "images/products/computers/comp8.webp",
+      "title": " Pilates 16 Touch Screen Laptop 24GB Memory",
+      "price": 170.0,
+      "oldprice": 285.0,
+      "sale": true,
+      "category": "computers"
+    },
+    {
+      "id": 2,
+      "image": "images/products/computers/comp2.webp",
+      "title": "JP Gaming Laptop 15.6 Laptop 256GB",
+      "price": 270.0,
+      "oldprice": 385.0,
+      "sale": true,
+      "category": "computers"
+    },
+    {
+      "id": 3,
+      "image": "images/products/computers/comp3.webp",
+      "title": "Corr Desktop 12GB Memory, WiFi, Bluetooth, Keyboard, Mouse",
+      "price": 285.0,
+      "oldprice": false,
+      "sale": false,
+      "category": "computers"
+    },
+    {
+      "id": 4,
+      "image": "images/products/computers/comp6.webp",
+      "title": "Corr Desktop 24GB Memory + 29 Screen Keyboard & Mouse",
+      "price": 285.0,
+      "oldprice": false,
+      "sale": false,
+      "category": "computers"
+    },
+    {
+      "id": 5,
+      "image": "images/products/computers/comp7.webp",
+      "title": "Pilates 16 Touch Screen Laptop 12GB Memory",
+      "price": 900.0,
+      "oldprice": false,
+      "sale": false,
+      "category": "computers"
+    },
+    {
+      "id": 6,
+      "image": "images/products/computers/comp4.webp",
+      "title": "MSP 14 Laptop 16GB Memory, Carbon Gray",
+      "price": 100.0,
+      "oldprice": false,
+      "sale": false,
+      "category": "computers"
+    },
+    {
+      "id": 7,
+      "image": "images/products/computers/monitor8.webp",
+      "title": "JP 29 LED Wide FHD Monitor",
+      "price": 270.0,
+      "oldprice": 485,
+      "sale": true,
+      "category": "computers"
+    }
+  ],
+  "Tablets": [
+    {
+      "id": 8,
+      "image": "images/products/tablets/tablet2.webp",
+      "title": "Sheer 10.2 Tablet With Wi-Fi , 32GB",
+      "price": 285.0,
+      "oldprice": false,
+      "sale": false,
+      "category": "tablets"
+    },
+    {
+      "id": 9,
+      "image": "images/products/tablets/tablet1.webp",
+      "title": "JP - Space Tablet 10.4 Wi-Fi 32GB",
+      "price": 170.0,
+      "oldprice": 185.0,
+      "sale": true,
+      "category": "tablets"
+    },
+    {
+      "id": 10,
+      "image": "images/products/tablets/tablet6.webp",
+      "title": "Pilates Go 10.5 Touch-Screen, 64GB With Cover",
+      "price": 385.0,
+      "oldprice": false,
+      "sale": false,
+      "category": "tablets"
+    },
+    {
+      "id": 11,
+      "image": "images/products/tablets/tablet4.webp",
+      "title": "Ove Tablet FD Plus - 10.3,  32GB",
+      "price": 170.0,
+      "oldprice": 285.0,
+      "sale": true,
+      "category": "tablets"
+    },
+    {
+      "id": 12,
+      "image": "images/products/tablets/tablet3.webp",
+      "title": "Sheer Pro 7.9-Inch Mini Tablet",
+      "price": 370.0,
+      "oldprice": 485.0,
+      "sale": true,
+      "category": "tablets"
+    },
+    {
+      "id": 13,
+      "image": "images/products/tablets/tablet7.webp",
+      "title": "Ocean Pro 11 - 12.3 Touch Screen",
+      "price": 170.0,
+      "oldprice": 185.0,
+      "sale": true,
+      "category": "tablets"
+    },
+    {
+      "id": 14,
+      "image": "images/products/tablets/tablet5.webp",
+      "title": "Corr Playtime 10.3,  32GB With Wi-Fi",
+      "price": 585.0,
+      "oldprice": false,
+      "sale": false,
+      "category": "tablets"
+    },
+    {
+      "id": 15,
+      "image": "images/products/tablets/tablet8.webp",
+      "title": "Space Tablet S7 - 11”, 128GB Wi-Fi",
+      "price": 285.0,
+      "oldprice": false,
+      "sale": false,
+      "category": "tablets"
+    }
+  ],
+  "Drones": [
+    {
+      "id": 16,
+      "image": "images/products/drones&cameras/camera4.webp",
+      "title": "Shak Outdoor Spotlight Security Camera",
+      "price": 485.0,
+      "oldprice": false,
+      "sale": false,
+      "category": "Drones&Cameras"
+    },
+    {
+      "id": 17,
+      "image": "images/products/drones&cameras/camera2.webp",
+      "title": "H1C Indoor Wireless 1080p Network Security Camera",
+      "price": 270.0,
+      "oldprice": 385.0,
+      "sale": true,
+      "category": "Drones&Cameras"
+    },
+    {
+      "id": 18,
+      "image": "images/products/drones&cameras/drone1.webp",
+      "title": "Wave Mini 4 Quadcopter With Remote Controller",
+      "price": 200,
+      "oldprice": false,
+      "sale": false,
+      "category": "Drones&Cameras"
+    },
+    {
+      "id": 19,
+      "image": "images/products/drones&cameras/camera3.webp",
+      "title": "Pantony DSLR Old School Camera With 18-55mm Lens",
+      "price": 70.0,
+      "oldprice": 110,
+      "sale": true,
+      "category": "Drones&Cameras"
+    },
+    {
+      "id": 20,
+      "image": "images/products/drones&cameras/drone2.webp",
+      "title": "HKI Tech Quadcopter Drone With 360 Camera & Controller",
+      "price": 170.0,
+      "oldprice": false,
+      "sale": false,
+      "category": "Drones&Cameras"
+    },
+    {
+      "id": 21,
+      "image": "images/products/drones&cameras/camera5.webp",
+      "title": "Megapixel Waterproof Mini Digital Camera",
+      "price": 170.0,
+      "oldprice": 190,
+      "sale": true,
+      "category": "Drones&Cameras"
+    },
+    {
+      "id": 22,
+      "image": "images/products/drones&cameras/drone3.webp",
+      "title": "EXE Mini Drone With Sky Controller",
+      "price": 270.0,
+      "oldprice": false,
+      "sale": false,
+      "category": "Drones&Cameras"
+    },
+    {
+      "id": 23,
+      "image": "images/products/drones&cameras/camera1.webp",
+      "title": "Pantony 180 20.0 Megapixel Digital Camera",
+      "price": 220.0,
+      "oldprice": false,
+      "sale": false,
+      "category": "Drones&Cameras"
+    }
+  ],
+  "Headphones": [
+    {
+      "id": 24,
+      "image": "images/products/headphones/headp6.webp",
+      "title": "Balo Headphones 700 Wireless Noise Cancelling",
+      "price": 120.0,
+      "oldprice": 170,
+      "sale": true,
+      "category": "Headphones"
+    },
+    {
+      "id": 25,
+      "image": "images/products/headphones/headp5.webp",
+      "title": "Space Buds True Wireless Earbud Headphones",
+      "price": 170.0,
+      "oldprice": false,
+      "sale": false,
+      "category": "Headphones"
+    },
+    {
+      "id": 26,
+      "image": "images/products/headphones/headp8.webp",
+      "title": "Drums Pro Wireless On-Ear Headphones",
+      "price": 140.0,
+      "oldprice": false,
+      "sale": false,
+      "category": "Headphones"
+    },
+    {
+      "id": 27,
+      "image": "images/products/headphones/headp2.webp",
+      "title": "In-ear Noise Cancelling & Isolating Wireless Earbuds",
+      "price": 140.0,
+      "oldprice": 200,
+      "sale": true,
+      "category": "Headphones"
+    },
+    {
+      "id": 28,
+      "image": "images/products/headphones/headp4.webp",
+      "title": "Certified Pantony Buds Wireless Earbud Headphones",
+      "price": 180.0,
+      "oldprice": false,
+      "sale": false,
+      "category": "Headphones"
+    },
+    {
+      "id": 29,
+      "image": "images/products/headphones/headp7.webp",
+      "title": "White Buds Wireless Earbud Headphones",
+      "price": 180.0,
+      "oldprice": false,
+      "sale": false,
+      "category": "Headphones"
+    },
+    {
+      "id": 30,
+      "image": "images/products/headphones/headp1.webp",
+      "title": "Surround Sound 10.2 Gaming Headset",
+      "price": 180.0,
+      "oldprice": 200,
+      "sale": true,
+      "category": "Headphones"
+    },
+    {
+      "id": 31,
+      "image": "images/products/headphones/headp3.webp",
+      "title": "MX50 Wired Earbud Headphones",
+      "price": 60.0,
+      "oldprice": false,
+      "sale": false,
+      "category": "Headphones"
+    }
+  ],
+  "Speakers": [
+    {
+      "id": 32,
+      "image": "images/products/speakers/speaker8.webp",
+      "title": "Turn5 Portable Bluetooth Speaker With Handle",
+      "price": 270.0,
+      "oldprice": 300,
+      "sale": true,
+      "category": "Speakers"
+    },
+    {
+      "id": 33,
+      "image": "images/products/speakers/speaker5.webp",
+      "title": "TV Bluetooth Soundbar With HDMI-ARC Connectivity",
+      "price": 220.0,
+      "oldprice": 260,
+      "sale": true,
+      "category": "Speakers"
+    },
+    {
+      "id": 34,
+      "image": "images/products/speakers/speaker4.webp",
+      "title": "Pill Shape Silver Portable Bluetooth Speaker",
+      "price": 220.0,
+      "oldprice": false,
+      "sale": false,
+      "category": "Speakers"
+    },
+    {
+      "id": 35,
+      "image": "images/products/speakers/speaker6.webp",
+      "title": "Round Mini Portable Bluetooth Speaker",
+      "price": 60.0,
+      "oldprice": 120,
+      "sale": true,
+      "category": "Speakers"
+    },
+    {
+      "id": 36,
+      "image": "images/products/speakers/speaker2.webp",
+      "title": "Studio 8 Portable Bluetooth Speaker",
+      "price": 100.0,
+      "oldprice": false,
+      "sale": false,
+      "category": "Speakers"
+    },
+    {
+      "id": 37,
+      "image": "images/products/speakers/speaker1.webp",
+      "title": "SDK Portable Bluetooth Speaker",
+      "price": 100.0,
+      "oldprice": false,
+      "sale": false,
+      "category": "Speakers"
+    },
+    {
+      "id": 38,
+      "image": "images/products/speakers/speaker7.webp",
+      "title": "SXD Mini Portable Bluetooth Speaker",
+      "price": 120.0,
+      "oldprice": false,
+      "sale": false,
+      "category": "Speakers"
+    },
+    {
+      "id": 39,
+      "image": "images/products/speakers/speaker3.webp",
+      "title": "SXD Mini Portable Bluetooth Speaker",
+      "price": 85.0,
+      "oldprice": 120,
+      "sale": true,
+      "category": "Speakers"
+    }
+  ],
+  "Mobiles": [
+    {
+      "id": 40,
+      "image": "images/products/mobiles/mob8.webp",
+      "title": "Pantony X21 5G, 128GB With Z Pen",
+      "price": 400,
+      "oldprice": false,
+      "sale": false,
+      "category": "mobiles"
+    },
+    {
+      "id": 41,
+      "image": "images/products/mobiles/mob7.webp",
+      "title": "JP Exmax Phantom, 5G, 16GB",
+      "price": 270,
+      "oldprice": false,
+      "sale": false,
+      "category": "mobiles"
+    },
+    {
+      "id": 42,
+      "image": "images/products/mobiles/mob6.webp",
+      "title": "Smartphone Z Pixel Max 128GB Unlocked",
+      "price": 180,
+      "oldprice": 240,
+      "sale": true,
+      "category": "mobiles"
+    },
+    {
+      "id": 43,
+      "image": "images/products/mobiles/mob1.webp",
+      "title": "OVE Light Space 5G, 128GB",
+      "price": 130,
+      "oldprice": 190,
+      "sale": true,
+      "category": "mobiles"
+    },
+    {
+      "id": 44,
+      "image": "images/products/mobiles/mob5.webp",
+      "title": "Pantony Super 10W 5G, 128GB",
+      "price": 100,
+      "oldprice": false,
+      "sale": false,
+      "category": "mobiles"
+    },
+    {
+      "id": 45,
+      "image": "images/products/mobiles/mob2.webp",
+      "title": "JP Light Phantom, 5G, 16GB",
+      "price": 100,
+      "oldprice": 120,
+      "sale": true,
+      "category": "mobiles"
+    },
+    {
+      "id": 46,
+      "image": "images/products/mobiles/mob3.webp",
+      "title": "Go XPD Protector 5G, 16GB",
+      "price": 100,
+      "oldprice": 190,
+      "sale": true,
+      "category": "mobiles"
+    },
+    {
+      "id": 47,
+      "image": "images/products/mobiles/mob4.webp",
+      "title": "MAX Pantony S 5G, 128GB",
+      "price": 170,
+      "oldprice": false,
+      "sale": false,
+      "category": "mobiles"
+    }
+  ],
+  "HomeCinema": [
+    {
+      "id": 48,
+      "image": "images/products/t.v&home cinema/tv4.webp",
+      "title": "Shel 50 Class LED 4K UHD Smart TV",
+      "price": 170,
+      "oldprice": false,
+      "sale": false,
+      "category": "tv"
+    },
+    {
+      "id": 49,
+      "image": "images/products/t.v&home cinema/bluetooth1.webp",
+      "title": "TV Bluetooth Soundbar With HDMI-ARC Connectivity",
+      "price": 130,
+      "oldprice": false,
+      "sale": false,
+      "category": "tv"
+    },
+    {
+      "id": 50,
+      "image": "images/products/t.v&home cinema/tv3.webp",
+      "title": "Shel 40 Class LED Full HD Smart TV",
+      "price": 100,
+      "oldprice": false,
+      "sale": false,
+      "category": "tv"
+    },
+    {
+      "id": 51,
+      "image": "images/products/t.v&home cinema/projector2.webp",
+      "title": "Wilsom Home Cinema 4K PRO-UHD 3LCD Projector",
+      "price": 200,
+      "oldprice": false,
+      "sale": false,
+      "category": "tv"
+    },
+    {
+      "id": 52,
+      "image": "images/products/t.v&home cinema/tv2.webp",
+      "title": "Allure 55 Class LED 4K UHD Smart TV",
+      "price": 120,
+      "oldprice": 170,
+      "sale": true,
+      "category": "tv"
+    },
+    {
+      "id": 53,
+      "image": "images/products/t.v&home cinema/projector1.webp",
+      "title": "JP 470 Wireless Mini Projector",
+      "price": 90,
+      "oldprice": false,
+      "sale": false,
+      "category": "tv"
+    },
+    {
+      "id": 54,
+      "image": "images/products/t.v&home cinema/tv6.webp",
+      "title": "42 Class Full HD Smart Streamer TV",
+      "price": 120,
+      "oldprice": false,
+      "sale": false,
+      "category": "tv"
+    },
+    {
+      "id": 55,
+      "image": "images/products/t.v&home cinema/tv5.webp",
+      "title": "65 Class Nano LED 4K UHD Smart TV",
+      "price": 120,
+      "oldprice": 150,
+      "sale": true,
+      "category": "tv"
+    }
+  ],
+  "WearableTech": [
+    {
+      "id": 56,
+      "image": "images/products/wearable/wearable1.webp",
+      "title": "Space Moon Smartwatch With Charger",
+      "price": 90,
+      "oldprice": 150,
+      "sale": true,
+      "category": "WearableTech"
+    },
+    {
+      "id": 57,
+      "image": "images/products/wearable/wearable2.webp",
+      "title": "Fitboot Inspire Fitness Tracker With Heart Rate Tracking",
+      "price": 60,
+      "oldprice": 100,
+      "sale": true,
+      "category": "WearableTech"
+    },
+    {
+      "id": 58,
+      "image": "images/products/wearable/var1.webp",
+      "title": "Safay GEN 2 256GB VR headset With Touch Controllers",
+      "price": 130,
+      "oldprice": false,
+      "sale": false,
+      "category": "WearableTech"
+    },
+    {
+      "id": 59,
+      "image": "images/products/wearable/wearable3.webp",
+      "title": "FitWatch Fitness Smart Watch",
+      "price": 130,
+      "oldprice": false,
+      "sale": false
+    },
+    {
+      "id": 60,
+      "image": "images/products/wearable/var3.webp",
+      "title": "HV Virtual Reality System for PC",
+      "price": 170,
+      "oldprice": false,
+      "sale": false,
+      "category": "WearableTech"
+    },
+    {
+      "id": 61,
+      "image": "images/products/wearable/wearable4.webp",
+      "title": "Pantony 6P Activity Tracker",
+      "price": 90,
+      "oldprice": false,
+      "sale": false,
+      "category": "WearableTech"
+    },
+    {
+      "id": 62,
+      "image": "images/products/wearable/wearable5.webp",
+      "title": "FitWatch XDH Fitness Smart Watch",
+      "price": 60,
+      "oldprice": false,
+      "sale": false,
+      "category": "WearableTech"
+    },
+    {
+      "id": 63,
+      "image": "images/products/wearable/var2.webp",
+      "title": "Journey Glass XD Virtual Reality Headset",
+      "price": 70,
+      "oldprice": 85.0,
+      "sale": true,
+      "category": "WearableTech"
+    }
+  ]
+}

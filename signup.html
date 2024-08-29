@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electronics Store Website sign Up Page</title>
+  <!-- start normalize css file -->
+  <link rel="stylesheet" href="styles/vendors/normalize.css">
+  <!-- start font awesome 6.2.0 version css file -->
+  <link rel="stylesheet" href="styles/vendors/all.min.css">
+  <!-- start main css file -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- start responsive css file -->
+  <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+  <!-- start coding -->
+  <section class="sign__up">
+    <div class="sign__up__form">
+      <div class="holder">
+        <div class="sign__up__banner">
+          <!-- <img src="images/signup and login/choose1.jpg" alt=""> -->
+          <h1 class="site__logo">TECHSHED</h1>
+        </div>
+        <div class="sign__up__fileds">
+          <h2>Sign Up</h2>
+          <div class="options">
+            <p>Sign up with one of following options</p>
+            <div>
+              <span class="option"><i class="fa-brands fa-google"></i></span>
+              <span class="option"><i class="fa-brands fa-apple"></i></span>
+            </div>
+          </div>
+          <div class="or">Or</div>
+          <div class="input__fields__holder">
+            <div>
+            <label for="spName">name</label>
+            <input type="text" placeholder="Create a name" id="spName">
+            <i class="fa-solid fa-user"></i>
+            </div>
+            <div>
+              <label for="spEmail">Email</label>
+              <input type="email" placeholder="Example User@apple.com" id="spEmail">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <label for="spPassword">Password</label>
+              <input type="password" placeholder="Create a password" id="spPassword">
+              <i class="fa-solid fa-unlock"></i>
+            </div>
+            <div>
+              <label for="spcPassword">Confirm password</label>
+              <input type="password" placeholder="Make sure password is matching" id="spcPassword">
+              <i class="fa-solid fa-lock"></i>
+            </div>
+          </div>
+          <button id="spBtn">Create Account</button>
+          <p>By signing up with us,ypu agree to our Terms & Privacy Policy</p>
+          <div class="have__account">
+            <span>Already have an account?</span>
+            <a href="login.html">Log in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end coding -->
+  <!-- start sweet alert js file -->
+  <script src="scripts/vendors/sweetalert.js"></script>
+  <!-- start fontawesome 6.2.0 version js file -->
+  <script src="scripts/vendors/all.min.js"></script>
+  <!-- start secondry js files -->
+  <script src="scripts/signup.js"></script>
+</body>
+</html>

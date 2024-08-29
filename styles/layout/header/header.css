@@ -1,0 +1,352 @@
+/* start root */
+:root {
+  --black--color: #000000;
+  --white--color: #ffffff;
+  --primary--color: #751fff;
+  --labels--color: #d72d2d;
+  --body--color: rgb(237, 236, 236);
+}
+/* end root */
+/* start header */
+/* part one */
+header {
+  width: 100%;
+}
+header.fixed { 
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+header .part__one {
+  width: 100%;
+  height: 40px;
+  background-color: var(--black--color);
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  color: var(--white--color);
+}
+header .part__one .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .part__one .offer span {
+  margin-left: 4px;
+}
+header .part__one ul {
+  display: flex;
+  color: var(--white--color);
+}
+header .part__one ul li a {
+  color: inherit;
+  margin: 0 10px;
+  text-decoration: underline white;
+}
+/* part two */
+header .part__two {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white--color);
+}
+header .part__two .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .part__two h1 {
+  font-size: 36px;
+  color: var(--black--color);
+  font-weight: 600;
+}
+header .part__two .search__engine {
+  flex-basis: 30%;
+  position: relative;
+}
+/* start menu */
+.search__engine .items__menu { 
+  position: absolute;
+  padding: 0 0 0 5px;
+  left: 0;
+  width: 100%;
+  overflow-y: auto;
+  background-color: var(--white--color);
+  height: 0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  opacity: 0;
+  transition: 1s;
+  z-index: 101;
+}
+.search__engine .items__menu.active { 
+  opacity: 1;
+  height: 200px;
+  
+  /* flex-direction: column; */
+}
+.search__engine .items__menu a { 
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #777;
+  transition: .3s ;
+}
+.search__engine .items__menu a:hover { 
+  background-color: var(--primary--color);
+  color: var(--white--color);
+}
+.search__engine .items__menu a img { 
+  width: 40px;
+  height: 100%;
+}
+.search__engine .items__menu a p { 
+  font-size: 14px;
+  margin-left: 10px;
+  max-width: 100%;
+}
+/* end menu */
+header .part__two .search__engine input {
+  width: calc(100% - 70px);
+  background-color: var(--body--color);
+  border-radius: 8px 0 0 8px;
+  height: 100%;
+  padding: 8px 0 10px 8px;
+  border-right: none;
+  transition: 0.2s;
+}
+header .part__two .search__engine input:hover {
+  background-color: var(--white--color);
+  border: 1px solid var(--black--color);
+}
+header .part__two .search__engine input::placeholder {
+  font-size: 11px;
+  color: var(--black--color);
+  opacity: 0.7;
+}
+header .part__two .search__engine button {
+  position: absolute;
+  background-color: var(--primary--color);
+  color: var(--white--color);
+  border-left: none;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 70px;
+  border-radius: 0px 8px 8px 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+header .part__two .search__engine button:hover {
+  background-color: var(--black--color);
+}
+header .part__two .header__icons {
+  display: flex;
+  align-items: center;
+}
+/* if user not log */
+header .part__two .header__icons .user__not__logged { 
+  display: none;
+  align-items: center;
+}
+header .part__two .header__icons .user__not__logged.active { 
+  display: flex;
+  align-items: center;
+}
+header .part__two .header__icons a {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  font-size: 13px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.2s;
+}
+header .part__two .header__icons a:hover {
+  color: var(--primary--color);
+}
+header .part__two .header__icons a svg {
+  padding: 3px;
+  border-radius: 50%;
+  margin-right: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13px;
+  height: 13px;
+  font-size: 10px;
+  background-color: var(--black--color);
+  color: var(--white--color);
+  
+}
+/* if user not log */
+/* if user log in */
+header .part__two .header__icons .user__log__in { 
+  display: none;
+}
+header .part__two .header__icons .user__log__in.active { 
+  display: flex;
+  align-items: center;
+}
+header .part__two .header__icons .user__log__in span { 
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .2s;
+}
+header .part__two .header__icons .user__log__in span:nth-of-type(1) { 
+  text-transform: capitalize;
+}
+header .part__two .header__icons .user__log__in span:nth-of-type(2) { 
+  margin: 0 0 0 10px;
+}
+header .part__two .header__icons .user__log__in span:nth-of-type(2) svg { 
+  margin-right: 5px;
+  width: 13px;
+  height: 13px;
+  font-size: 10px;
+  background-color: var(--black--color);
+  color: var(--white--color);
+  border-radius: 50%;
+  padding: 3px;
+}
+header .part__two .header__icons .user__log__in span:nth-of-type(2):hover { 
+  color: var(--primary--color);
+}
+/* if user log in */
+header .part__two .header__icons li.shop__cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+header .part__two .header__icons li.shop__cart span {
+  background-color: var(--black--color);
+  color: var(--white--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  font-size: 10px;
+  padding: 10px;
+  margin-left: 3px;
+}
+header .part__two .nav__menu {
+  font-size: 20px;
+  display: none;
+}
+/* start nav */
+header nav {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  height: 35px;
+  background-color: var(--body--color);
+}
+header nav .container {
+  display: flex;
+  align-items: center;
+}
+header nav a {
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0 15px 0 0;
+  transition: 0.3s;
+}
+header nav a:hover {
+  color: var(--primary--color);
+}
+header nav .audio {
+  position: relative;
+}
+header nav .audio ul {
+  position: absolute;
+  left: 0;
+  background-color: var(--body--color);
+  padding: 5px;
+  visibility: hidden;
+  transition: 0.3s;
+  bottom: -50px;
+  z-index: -1;
+}
+header nav .audio ul a {
+  display: block;
+  margin: 3px 0;
+}
+header nav .audio:hover ul {
+  visibility: visible;
+  bottom: -57px;
+  z-index: 100;
+}
+/****************** end responsive to 767px *******************/
+@media screen and (max-width: 767px) {
+  /* part one */
+  header .part__one .container {
+    justify-content: center;
+  }
+  header .part__one ul {
+    display: none;
+  }
+  header nav {
+    display: none;
+  }
+  header .part__two .nav__menu {
+    display: block;
+  }
+  /* part two */
+header .part__two {
+  height: 120px;
+}
+header .part__two .container {
+  flex-wrap: wrap;
+  align-items: center;
+}
+header .part__two h1 {
+  font-size: 24px;
+  margin: 10px 0 ;
+}
+header .part__two .search__engine {
+  flex-basis: 100%;
+  margin-bottom: 10px;
+}
+header .part__two .search__engine input {
+  width: calc(100% - 70px);
+}
+header .part__two .header__icons {
+  margin-bottom: 10px;
+}
+header .part__two .nav__menu {
+  display: block;
+}
+}
+/****************** end responsive to 767px *******************/
+
+/****************** start responsive from 768px to 1024px *******************/
+@media screen and (min-width: 768px) and (max-width: 1024px) { 
+header .part__two .search__engine {
+  flex-basis: 35%;
+  position: relative;
+}
+header .part__two .header__icons {
+  display: flex;
+  align-items: center;
+}
+header .part__two .header__icons a {
+  margin: 0 5px;
+}
+}
+
+/****************** end responsive from 768px to 1024px *******************/

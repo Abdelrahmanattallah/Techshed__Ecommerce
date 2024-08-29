@@ -1,0 +1,64 @@
+/* start root */
+:root {
+  --black--color: #000000;
+  --white--color: #ffffff;
+  --primary--color: #751fff;
+  --labels--color: #d72d2d;
+  --body--color: rgb(237, 236, 236);
+}
+.nav__menu__links { 
+  display: none;
+}
+/* end root */
+@media screen and (max-width:767px){ 
+  .nav__menu__links { 
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: -100%;
+    background-color: var(--body--color);
+    z-index: 120;
+    transition: .4s;
+    opacity: .3;
+  }
+  .nav__menu__links.fixed { 
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+  .nav__menu__links.active { 
+    top: 0;
+    z-index: 1000;
+    opacity: 1;
+  }
+  .nav__menu__links .close__menu { 
+    position: absolute;
+    display: block;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .nav__menu__links nav { 
+    width: 100%;
+    background-color: var(--body--color);
+    text-align: center;
+    margin-top: 40px;
+  }
+  .nav__menu__links nav a { 
+    display: block;
+    width: 100%;
+    margin: 10px 0 0;
+    transition: .3s;
+    font-size: 13px;
+    padding: 10px 0;
+  }
+  .nav__menu__links nav a:not(:last-of-type) { 
+    border-bottom: 1px solid #777;
+  }
+  .nav__menu__links nav a:hover { 
+    color: var(--primary--color);
+  } 
+}

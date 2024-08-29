@@ -1,0 +1,131 @@
+/* start root */
+:root {
+  --black--color: #000000;
+  --white--color: #ffffff;
+  --primary--color: #751fff;
+  --labels--color: #d72d2d;
+  --body--color: rgb(237, 236, 236);
+}
+/* end root */
+/* start footer */
+footer { 
+  padding: 60px 0;
+  background-color: var(--white--color);
+}
+footer .footer__holder { 
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+footer .footer__holder .single__col { 
+  flex-basis: 25%;
+  margin: 0 20px;
+}
+footer .footer__holder .single__col:nth-of-type(4) { 
+  flex-basis: 15%;
+}
+footer .footer__holder .single__col h2 { 
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+footer .footer__holder .single__col p { 
+  font-size: 13px;
+  font-weight: 100;
+  width: 140px;
+  line-height: 1.7;
+}
+footer .footer__holder .single__col .social__media { 
+  margin-top: 25px;
+}
+footer .footer__holder .single__col .social__media svg { 
+  margin: 0 5px 0 0;
+  font-size: 15px;
+  cursor: pointer;
+}
+footer .footer__holder .single__col nav li { 
+  padding: 3px 0;
+}
+footer .footer__holder .single__col nav li a { 
+  font-size: 14px;
+  font-weight: 100;
+  transition: .4s ;
+  color: var(--black--color);
+}
+footer .footer__holder .single__col nav li a:hover { 
+  color: var(--primary--color);
+}
+footer .container .payments { 
+  margin: 40px 0 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+footer .container .payments::before { 
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: var(--body--color);
+  top: 0;
+}
+footer .container .payments p { 
+  margin: 30px 0 0;
+  font-size: 14px;
+  font-weight: 200;
+}
+footer .container .payments .payments__holder { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+footer .container .payments .payments__holder img { 
+  width: 33px;
+  height: 11px;
+  margin: 0 20px;
+  object-fit: cover;
+  cursor: pointer;
+}
+/* end footer */
+/****************** start responsive to 767px *******************/
+@media screen and (max-width:767px) { 
+  footer { 
+    padding: 40px 0;
+    background-color: var(--white--color);
+    margin-bottom: 0;
+  }
+  footer .footer__holder { 
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  footer .footer__holder .single__col { 
+    flex-basis: 100%;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+  footer .footer__holder .single__col:nth-of-type(4) { 
+    flex-basis: 100%;
+    margin: 0 0 20px 0;
+    text-align: center; 
+  }
+  footer .footer__holder .single__col h2 { 
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  footer .footer__holder .single__col p { 
+    width: 100%;
+  }
+  footer .container .payments { 
+    margin:0;
+  }
+  footer .container .payments .payments__holder img { 
+    width: 33px;
+    height: 11px;
+    margin: 0 7px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+}
+/****************** end responsive to 767px *******************/

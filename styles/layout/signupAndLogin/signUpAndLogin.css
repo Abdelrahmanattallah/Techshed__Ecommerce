@@ -1,0 +1,277 @@
+/* start root */
+:root {
+  --black--color: #000000;
+  --white--color: #ffffff;
+  --primary--color: #751fff;
+  --labels--color: #d72d2d;
+  --body--color: rgb(237, 236, 236);
+}
+/* end root */
+/* start sign up */
+.sign__up { 
+  width: 100%;
+  height: 100vh;
+  color: var(--white--color);
+  background-image: url(../../../images/signup\ and\ login/choose1.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.sign__up__form { 
+  background-color: #0000009a;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1000;
+  width: 1000px;
+}
+.sign__up__form .holder { 
+  display: flex;
+}
+.sign__up__banner { 
+  flex-basis: 50%;
+  flex: 1;
+  border-top-left-radius:12px ;
+  border-bottom-left-radius:12px ;
+  background-image: url(../../../images/signup\ and\ login/choose1.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.sign__up__banner img { 
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+.sign__up__banner .site__logo { 
+  font-size: 40px;
+  background-color: var(--black--color);
+  padding: 10px 20px;
+  opacity: .7;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 10;
+}
+.sign__up__fileds { 
+  flex-basis: 40%;
+  padding: 10px 20px;
+}
+.sign__up__fileds h2 { 
+  text-align: center;
+  font-weight: bold;
+}
+.sign__up__fileds .options { 
+  margin: 10px 0;
+  text-align: center;
+}
+.sign__up__fileds .options p { 
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.sign__up__fileds .options div { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign__up__fileds .options .option { 
+  display: block;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all .3s;
+  background-color: var(--white--color);
+  color: var(--black--color);
+}
+.sign__up__fileds .options .option:hover { 
+  background-color: var(--black--color);
+  color: var(--white--color);
+  border: none;
+}
+.sign__up__fileds .or { 
+  text-align: center;
+  position: relative;
+}
+.sign__up__fileds .or::before,
+.sign__up__fileds .or::after { 
+  position: absolute;
+  content: '';
+  width: 40%;
+  height: 1px;
+  background-color: #f1f1f1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sign__up__fileds .or::before { 
+  left: 0;
+}
+.sign__up__fileds .or::after { 
+right: 0;
+}
+.sign__up__fileds .input__fields__holder div { 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+}
+.sign__up__fileds .input__fields__holder div label { 
+  margin-bottom: 5px;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+.sign__up__fileds .input__fields__holder div input { 
+  border: 1px solid #f1f1f1;
+  background-color: transparent;
+  color: var(--white--color);
+  padding: 10px 20px;
+  border-radius: 3px;
+  transition: all .3s;
+}
+.sign__up__fileds .input__fields__holder div input::placeholder { 
+  font-size: 12px;
+  letter-spacing: 1px ;
+  font-weight: 100;
+  color: var(--white--color);
+}
+.sign__up__fileds .input__fields__holder div input:focus { 
+  border-color: #000000;
+}
+.sign__up__fileds .input__fields__holder div svg { 
+  position: absolute;
+  top: 70%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  left: 5px;
+}
+.sign__up__fileds button { 
+  width: 100%;
+  border-radius: 3px;
+  height: 40px;
+  margin: 10px auto;
+  background-color: var(--white--color);
+  color: var(--black--color);
+  font-size: 14px;
+  display: block;
+  cursor: pointer;
+  transition: all .3s;
+}
+.sign__up__fileds button:hover { 
+  background-color: var(--black--color);
+  color: var(--white--color);
+}
+.sign__up__fileds p { 
+  font-size: 12px;
+  font-weight: 100;
+  width: 230px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.6;
+}
+.sign__up__fileds .have__account { 
+  margin: 20px auto ;
+  text-align: center;
+  font-size: 12px;
+}
+.sign__up__fileds .have__account a { 
+  color: var(--white--color);
+  text-decoration: underline;
+  margin-left: 4px;
+}
+/* end sign up */
+/* start sign up media */
+@media screen and (max-width:767px) { 
+  .sign__up__form { 
+    background-color: #00000098;
+    left: 0;
+    top: 0;
+    transform: translate(0);
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+  }
+  .sign__up__banner { 
+    display: none;
+  }
+  .sign__up__fileds { 
+    flex-basis: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .sign__up__fileds .input__fields__holder div { 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+  }
+}
+/* end sign up media */
+
+
+/****************** start responsive from 768px to 1024px *******************/
+@media screen and (min-width: 768px) and (max-width: 1024px) { 
+.sign__up__form { 
+  left: 0;
+  top:0;
+  transform: translate(0);
+  width: 100%;
+  height: 100%;
+}
+.sign__up__form .holder { 
+  flex-basis: 100%;
+}
+.sign__up__banner { 
+  display: none;
+}
+.sign__up__fileds { 
+  flex-basis: 100%; 
+}
+.sign__up__fileds .options { 
+  margin: 30px 0;
+  text-align: center;
+}
+.sign__up__fileds .options p { 
+  margin-bottom: 30px;
+}
+.sign__up__fileds .or { 
+  margin-bottom: 30px;
+}
+.sign__up__fileds .input__fields__holder div { 
+  margin: 25px 0;
+}
+.sign__up__fileds .input__fields__holder div label { 
+  margin-bottom: 10px;
+}
+.sign__up__fileds .input__fields__holder div input { 
+  padding: 15px 25px;
+}
+.sign__up__fileds .input__fields__holder div svg { 
+  left: 10px;
+}
+.sign__up__fileds button { 
+  margin: 35px auto;
+}
+.sign__up__fileds p { 
+  font-size: 14px;
+  width: 100%;
+  margin: 40px auto 0;
+  line-height: 0;
+}
+.sign__up__fileds .have__account { 
+  font-size: 15px;
+}
+}
+  /****************** end responsive from 768px to 1024px *******************/

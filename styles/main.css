@@ -1,0 +1,640 @@
+/* start import css files */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+@import url(layout/components/comp.css);
+@import url(layout/header/header.css);
+@import url(layout/navbar/nav.css);
+@import url(layout/smallcart/smallcart.css);
+@import url(layout/fav/fav.css);
+@import url(layout/checkout/checkout.css);
+@import url(layout/productdetails/productdetails.css);
+@import url(layout/signupAndLogin/signUpAndLogin.css);
+@import url(layout/footer/footer.css);
+/* @import url(responsive.css); */
+/* end import css files */
+/* start root */
+:root {
+  --black--color: #000000;
+  --white--color: #ffffff;
+  --body--color: rgb(237, 236, 236);
+  --primary--color: #751fff;
+  --labels--color: #d72d2d;
+}
+/* end root */
+/* start slider section */
+.slider__show {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* background-image: url(../images/banners/slider1.webp); */
+  background-position: center;
+  background-size: cover;
+  transition: 0.4s ease;
+  display: flex;
+  align-items: center;
+}
+.slider__show .carousel__holder {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.slider__show .carousel__holder span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 30px;
+  background-color: #00000041;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--white--color);
+  transition: all 0.4s;
+}
+.slider__show .carousel__holder span:hover {
+  background-color: #000000;
+}
+.slider__show .carousel__holder .next {
+  right: 10px;
+}
+.slider__show .carousel__holder .prev {
+  left: 10px;
+}
+.slider__intro {
+  position: absolute;
+  left: 150px;
+  top: 40%;
+  transform: translateY(-40%);
+}
+.slider__intro .label {
+  display: block;
+  width: fit-content;
+  padding: 4px 8px;
+  margin-bottom: 10px;
+}
+.slider__intro h3 {
+  font-size: 40px;
+  width: 350px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.slider__intro p {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+/* end slider section */
+/* start bilboard */
+.bilboard {
+  padding: 30px 0;
+}
+.bilboard .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bilboard .container .bilboard__offer {
+  flex-basis: 49%;
+  position: relative;
+  background-color: #751fff;
+}
+.bilboard .container .bilboard__offer img {
+  width: 100%;
+  height: 100%;
+}
+.bilboard .container .bilboard__offer .bilboard__intro {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  color: var(--white--color);
+}
+.bilboard .container .bilboard__offer .bilboard__intro span {
+  display: block;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+.bilboard .container .bilboard__offer .bilboard__intro h3 {
+  font-size: 38px;
+  margin-bottom: 10px;
+  width: 180px;
+}
+.bilboard .container .bilboard__offer .bilboard__intro p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+/* end bilboard */
+/* start features */
+.features {
+  padding-bottom: 30px;
+}
+.features .container .features__holder {
+  background-color: var(--white--color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+}
+.features .features__holder .single__feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 24%;
+}
+.features .features__holder .single__feature img {
+  width: 50px;
+  height: 50px;
+}
+.features .features__holder .single__feature p {
+  font-size: 14px;
+  margin-left: 15px;
+  line-height: 1.5;
+  color: var(--black--color);
+  font-weight: bold;
+  max-width: 110px;
+}
+/* end features */
+/* start best seller */
+.pro .container .btn__first__shape {
+  margin: auto;
+}
+/* end best seller */
+/* start category */
+.categ__holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+.categ__holder .single__product {
+  display: block;
+  flex-basis: 15%;
+  text-align: center;
+  margin: 20px;
+}
+.categ__holder .single__product .img__holder {
+  overflow: hidden;
+  border-radius: 50%;
+}
+.categ__holder .single__product .img__holder img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+.categ__holder .single__product h4 {
+  margin-top: 15px;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.categ__holder .single__product:hover img {
+  transform: scale(1.1);
+}
+/* end category */
+/* start second bilboard */
+.main__bilboard {
+  padding-bottom: 30px;
+}
+.main__bilboard .container {
+  display: flex;
+}
+.main__bilboard .container .bilboard__image {
+  flex-basis: 70%;
+  position: relative;
+}
+.main__bilboard .container .bilboard__image img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+.main__bilboard .container .bilboard__image .label {
+  position: absolute;
+  z-index: 10;
+  right: -60px;
+  top: 20px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  text-align: center;
+  transform: rotate(20deg);
+}
+.main__bilboard .container .bilboard__intro {
+  position: relative;
+  background-color: var(--white--color);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+.main__bilboard .container .bilboard__intro div {
+  margin-left: 40px;
+}
+.main__bilboard .container .bilboard__intro span {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.main__bilboard .container .bilboard__intro span.price {
+  font-size: 55px;
+}
+.main__bilboard .container .bilboard__intro h4 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  max-width: 230px;
+}
+.main__bilboard .container .bilboard__intro p {
+  font-weight: normal;
+  font-size: 12px;
+}
+.main__bilboard .container .bilboard__intro a {
+  margin: 25px 0 0;
+  width: 130px;
+}
+/* end second bilboard */
+/* start sale */
+.drones__bilboard {
+  padding-bottom: 30px;
+}
+.drones__bilboard .container {
+  display: flex;
+}
+.drones__bilboard .bilboard__intro {
+  background-color: var(--white--color);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.drones__bilboard .bilboard__intro div .label {
+  display: block;
+  width: fit-content;
+  padding: 5px 12px;
+}
+.drones__bilboard .bilboard__intro div .price {
+  display: flex;
+  align-items: center;
+  color: var(--black--color);
+  font-size: 55px;
+}
+.drones__bilboard .bilboard__intro div .price span:nth-of-type(1) {
+  color: var(--primary--color);
+}
+.drones__bilboard .bilboard__intro div .price span:nth-of-type(2) {
+  margin-left: 10px;
+}
+.drones__bilboard .bilboard__intro div span:not(.label, .price) {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 0;
+}
+.drones__bilboard .bilboard__intro div h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  max-width: 100%;
+}
+.drones__bilboard .bilboard__intro div p {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.drones__bilboard .bilboard__intro div a {
+  margin: 25px 0 0;
+  width: 130px;
+}
+.drones__bilboard .bilboard__image {
+  flex-basis: 70%;
+}
+.drones__bilboard .bilboard__image img {
+  width: 100%;
+  height: 100%;
+}
+/* end sale */
+/* start brands */
+.brands .container .brands__holder {
+  margin: 40px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brands .container .brands__holder .brand {
+  flex-basis: 24%;
+  border: 1px solid var(--body--color);
+}
+.brands .container .brands__holder .brand img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+/* end brands */
+/* start subscribe */
+.subscribe .container {
+  background-color: var(--primary--color);
+}
+.subscribe .section__title {
+  color: var(--white--color);
+}
+.subscribe p {
+  color: var(--white--color);
+  font-size: 12px;
+  font-weight: normal;
+  margin: 10px 0 0;
+  text-align: center;
+}
+.subscribe .sub__field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 36px;
+  margin: 30px auto 10px;
+  position: relative;
+}
+.subscribe .sub__field input {
+  width: 100%;
+  padding-left: 10px;
+  height: 100%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+.subscribe .sub__field button {
+  position: absolute;
+  right: -20px;
+  background-color: var(--black--color);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.subscribe .sub__field button:hover {
+  background-color: var(--body--color);
+  color: var(--black--color);
+}
+/* end subscribe */
+/* start help center  */
+.help__center {
+  background-color: var(--black--color);
+  display: flex;
+  margin-bottom: 30px;
+}
+.help__center .help__center__intro {
+  color: var(--white--color);
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+}
+.help__center .help__center__intro div h2 {
+  width: 240px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.help__center .help__center__intro div p {
+  width: 250px;
+  font-size: 12px;
+  line-height: 1.6;
+  font-weight: normal;
+}
+.help__center .help__center__intro div a {
+  margin: 25px 0;
+}
+.help__center .help__center__intro div a:hover {
+  background-color: var(--white--color);
+  color: var(--black--color);
+}
+.help__center .help__center__banner {
+  flex-basis: 60%;
+}
+.help__center .help__center__banner img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+/* end help center  */
+/* start about */
+.about {
+  padding: 30px 0;
+}
+.about .container .about__holder {
+  padding: 30px 0;
+  border-top: 2px solid var(--body--color);
+  border-bottom: 2px solid var(--body--color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .container .about__holder .about__image {
+  flex-basis: 45%;
+}
+.about .container .about__holder .about__image img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+.about .container .about__holder .about__intro {
+  flex-basis: 45%;
+}
+.about .container .about__holder .about__intro p {
+  font-size: 13px;
+  font-weight: 200;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  width: 350px;
+}
+/* end about */
+/* start contact us */
+.contact {
+  padding: 30px 0;
+}
+.contact__holder {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  padding: 30px 0;
+  border-top: 2px solid var(--body--color);
+  border-bottom: 2px solid var(--body--color);
+}
+.contact__holder .contact__desc {
+  flex-basis: 35%;
+}
+.contact__holder .contact__desc div {
+  margin-bottom: 30px;
+}
+.contact__holder .contact__desc div h4 {
+  margin-bottom: 30px;
+}
+.contact__holder .contact__desc div span {
+  display: block;
+  font-size: 13px;
+  font-weight: 200;
+  margin-bottom: 15px;
+}
+.contact__holder .contact__desc div p {
+  width: 140px;
+  font-size: 13px;
+  font-weight: 200;
+}
+.contact__holder .contact__form {
+  flex-basis: 50%;
+}
+.contact__holder .contact__form h4 {
+  margin-bottom: 20px;
+}
+.contact__holder .contact__form p {
+  font-size: 13px;
+  font-weight: 200;
+}
+.contact__holder .contact__form .form__holder {
+  margin: 25px 0;
+  display: flex;
+  flex-direction: column;
+}
+.contact__holder .contact__form .form__holder .single__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.contact__holder .contact__form .form__holder .single__form input {
+  border-bottom: 2px solid var(--black--color);
+  flex-basis: 49%;
+  padding-bottom: 15px;
+}
+.contact__holder .contact__form .form__holder textarea {
+  border-bottom: 2px solid var(--black--color);
+}
+.contact__holder .contact__form .form__holder a {
+  margin-top: 30px;
+}
+/* end contact us */
+/* start help center */
+.helpCenter {
+  padding: 30px 0;
+}
+.helpCenter .links {
+  width: 700px;
+  margin: 0 auto 20px;
+  font-size: 13px;
+  color: var(--black--color);
+}
+.helpCenter a {
+  transition: 0.3s;
+}
+.helpCenter a:first-of-type {
+  color: var(--primary--color);
+  margin-right: 10px;
+}
+.helpCenter a:hover {
+  color: var(--primary--color);
+}
+.helpCenter .help__Center__holder {
+  margin: 20px auto 0;
+  border-bottom: 1px solid var(--black--color);
+  width: 700px;
+  height: 30px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+.helpCenter .help__Center__holder div:not(.social__icons) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 10px;
+  cursor: pointer;
+}
+.helpCenter .help__Center__holder div h5 {
+  font-size: 14px;
+  font-weight: 300;
+}
+.helpCenter .help__Center__holder div span {
+  font-size: 10px;
+}
+.helpCenter .help__Center__holder p {
+  font-size: 13px;
+  font-weight: 200;
+  margin-bottom: 10px;
+  width: 300px;
+  line-height: 1.6;
+}
+.helpCenter .help__Center__holder span {
+  display: block;
+  font-size: 12px;
+  font-weight: 200;
+  margin: 3px 0;
+}
+.helpCenter .help__Center__holder .social__icons {
+  margin-top: 12px;
+}
+.helpCenter .help__Center__holder .social__icons svg {
+  font-size: 12px;
+  margin-right: 3px;
+  cursor: pointer;
+}
+.helpCenter .help__Center__holder:hover {
+  height: 200px;
+}
+.helpCenter .help__Center__holder:nth-last-of-type(2):hover {
+  height: 140px;
+}
+/* end help center */
+/* start shipping and returns */
+.shipping {
+  padding: 30px 0;
+}
+.shipping .policy__holder {
+  border-top: 1px solid var(--black--color);
+  border-bottom: 1px solid var(--black--color);
+}
+.shipping .policy__holder .policy {
+  margin: 30px 0;
+  text-align: center;
+}
+.shipping .policy__holder .policy p {
+  font-size: 13px;
+  font-weight: 200;
+  max-width: 500px;
+  margin: 20px auto 0;
+  line-height: 1.6;
+}
+/* end shipping and returns */
+/* start Terms & Conditions */
+.Terms__Conditions {
+  padding: 30px 0;
+}
+.Terms__Conditions .temrs__holder {
+  border-top: 1px solid var(--black--color);
+  border-bottom: 1px solid var(--black--color);
+}
+.Terms__Conditions .single__condition {
+  margin: 30px 0;
+  text-align: center;
+}
+.Terms__Conditions .single__condition:nth-of-type(4) h3 {
+  margin-bottom: 20px;
+}
+.Terms__Conditions .single__condition p {
+  font-size: 13px;
+  font-weight: 200;
+  max-width: 500px;
+  margin: 20px auto 0;
+  line-height: 1.6;
+}
+.Terms__Conditions .single__condition span {
+  display: block;
+  margin: 0 0 6px;
+  font-size: 13px;
+  font-weight: 200;
+}
+/* end Terms & Conditions */

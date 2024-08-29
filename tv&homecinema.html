@@ -1,0 +1,225 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electronics Store Website Home Cinema</title>
+  <!-- start normalize css file -->
+  <link rel="stylesheet" href="styles/vendors/normalize.css">
+  <!-- start font awesome 6.2.0 version css file -->
+  <link rel="stylesheet" href="styles/vendors/all.min.css">
+  <!-- start main css file -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- start responsive css file -->
+  <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body class="branch__pages">
+  <!-- start coding -->
+  <!-- start top header -->
+  <header>
+    <div class="part__one">
+      <div class="container">
+        <div class="offer">
+          <i class="fa-solid fa-gift"></i>
+          <span>Free Shipping for orders over 50$</span>
+        </div>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="helpcenter.html">Help Center</a></li>
+          <li><a href="tel:+20123456789">Call Us +20123456789</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="part__two">
+      <div class="container">
+        <h1><a href="index.html" class="logo">TechShed</a></h1>
+        <div class="nav__menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="search__engine">
+          <input placeholder="Search..." type="search"  id="searchInput">
+          <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <div class="items__menu">
+          </div>
+        </div>
+        <div class="header__icons">
+          <!-- if user not loggin -->
+          <div class="user__not__logged active">
+          <a class="signup" href="signup.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> Sign Up</a>
+          <a class="login" href="login.html"><i class="fa-regular fa-user"></i> Log In</a>
+          </div>
+          <!-- if user not loggin -->
+          <!-- if user loged in -->
+          <div class="user__log__in ">
+            <span class="user__account"></span>
+            <span class="log__out"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</span>
+          </div>
+          <!-- if user loged in -->
+          <a class="fav" href="favourites.html"><i class="fa-regular fa-heart"></i> Favourites</a>
+          <li class="shop__cart" ><i class="fa-solid fa-cart-shopping"></i><span id="shopCount">0</span></li>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <div class="container">
+      <a href="shopall.html">Shop All</a>
+      <a  href="computers.html">computers</a>
+      <a href="tablets.html">Tablets</a>
+      <a href="drones&cameras.html">Drones & Cameras</a>
+      <li class="audio"><a href="#" >Audio <i class="fa-solid fa-caret-down"></i>
+        <ul>
+          <a href="headphones.html">Headphones</a>
+          <a href="speakers.html">Speakers</a>
+        </ul>
+      </a>
+      </li>
+      <a href="mobiles.html">Mobiles</a>
+      <a href="tv&homecinema.html">T.V & Home Cinema</a>
+      <a href="wearabletech.html">Wearable Tech</a>
+      <a href="sale.html">Sale</a>
+    </div>
+    </nav>
+  </header>
+  <!-- end top header -->
+  <!-- start menu navigation bar -->
+  <div class="nav__menu__links">
+    <span class="close__menu"><i class="fa-regular fa-circle-xmark"></i></span>
+    <nav>
+      <a href="shopall.html">Shop All</a>
+      <a href="computers.html">Computers</a>
+      <a href="tablets.html">Tablets</a>
+      <a href="drones&cameras.html">Drones & Cameras</a>
+      <a href="headphones.html">Headphones</a>
+      <a href="speakers.html">Speakers</a>
+      <a href="mobiles.html">Mobiles</a>
+      <a href="tv&homecinema.html">T.V & Home Cinema</a>
+      <a href="wearabletech.html">Wearable Tech</a>
+      <a href="sale.html">Sale</a>
+    </nav>
+  </div>
+  <!-- end menu navigation bar -->
+  <!-- start slide show sec -->
+  <!-- start shop all page -->
+  <section class="shop__all p-30 cat__page">
+    <div class="container">
+      <h2 class="section__title__two">T.V & Home Cinema</h2>
+      <div class="filter__holder">
+        <span>Filter By :</span>
+        <span class="filter__choose">All</span>
+        <span class="filter__choose">Sale</span>
+        <span class="filter__choose">Best Seller</span>
+      </div>
+      <div class="cards__holder" id="homeCinemaHolder">
+      </div>
+    </div>
+  </section>
+  <!-- end shop all page -->
+    <!-- start help center bilboard -->
+    <section class="help__center">
+      <div class="help__center__intro">
+        <div>
+          <h2>Need Help? Check Out Our Help Center</h2>
+          <p>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+          <a href="helpcenter.html" class="btn__first__shape">Go to Help Center</a>
+        </div>
+      </div>
+      <div class="help__center__banner">
+        <img src="images/banners/bilboard5.jpg" alt="">
+      </div>
+    </section>
+    <!-- end help center bilboard -->
+    <!-- start footer -->
+    <footer>
+      <div class="container">
+        <div class="footer__holder">
+          <div class="single__col">
+            <h2>Store Location</h2>
+            <p>500 Terry Francine Street San Francisco, CA 94158 info@mysite.com 123-456-7890</p>
+            <div class="social__media">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+          <div class="single__col">
+            <h2>Shop</h2>
+            <nav>
+              <li><a href="shopall.html">Shop all</a></li>
+              <li><a href="computers.html">Computers</a></li>
+              <li><a href="tablets.html">Tablets</a></li>
+              <li><a href="drones&cameras.html">Drones & Cameras</a></li>
+              <li><a href="headphones.html">Headphones</a></li>
+              <li><a href="speakers.html">Speakers</a></li>
+              <li><a href="mobiles.html">Mobiles</a></li>
+              <li><a href="tv&homecinema.html">T.V & Home Cinema</a></li>
+              <li><a href="wearabletech.html">Wearable Tech</a></li>
+              <li><a href="sale.html">Sale</a></li>
+            </nav>
+          </div>
+          <div class="single__col">
+            <h2>Customer Support</h2>
+            <nav>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="helpcenter.html">Help Center</a></li>
+              <li><a href="about.html">About Us</a></li>
+            </nav>
+          </div>
+          <div class="single__col">
+            <h2>Policy</h2>
+            <nav>
+              <li><a href="shipping&returns.html">Shipping & Returns</a></li>
+              <li><a href="terms&conditions.html">Terms & Conditions</a></li>
+              <li><a href="shipping&returns.html">Payment Methods </a></li>
+              <li><a href="shipping&returns.html">FAQ</a></li>
+            </nav>
+          </div>
+        </div>
+        <div class="payments">
+          <p>We accept the following paying methods</p>
+          <div class="payments__holder">
+            <img src="images/paying/pay8.webp" alt="">
+            <img src="images/paying/pay1.png" alt="">
+            <img src="images/paying/pay2.webp" alt="">
+            <img src="images/paying/pay3.webp" alt="">
+            <img src="images/paying/pay4.webp" alt="">
+            <img src="images/paying/pay5.webp" alt="">
+            <img src="images/paying/pay6.webp" alt="">
+            <img src="images/paying/Pay7.webp" alt="">
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- start body elements -->
+    <p class="copy__rights">© 2023 by TechShed. Created and Designed by Abdelrahman</p>
+    <button class="to__top "><i class="fa-solid fa-arrow-turn-up"></i></button>
+    <div class="small__cart ">
+    <div class="small__cart__head">
+    <span id="closeSmallCart"><i class="fa-solid fa-angle-right"></i></span>
+    <h3>Cart</h3>
+    </div>
+    <div class="small__cart__body">
+
+    </div>
+    <div class="small__cart__foot">
+      <div class="subtotal">
+        <span>Subtotal</span>
+        <span id="smallCartTotal">$0.00</span>
+      </div>
+      <a href="checkout.html" >View Cart</a>
+    </div>
+    </div>
+    <div class="body__overlay"></div>
+  <!-- end body elements -->
+  <!-- end coding -->
+  <!-- start sweet alert js file -->
+  <script src="scripts/vendors/sweetalert.js"></script>
+  <!-- start fontawesome 6.2.0 version js file -->
+  <script src="scripts/vendors/all.min.js"></script>
+  <!-- start main script js file -->
+  <script src="scripts/app.js" type="module"></script>
+  <script src="scripts/homeCinema.js" type="module"></script>
+</body>
+</html>
